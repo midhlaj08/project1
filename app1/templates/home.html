@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <form action="/login1/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="">Username:</label>
+            <input type="text" name="username" id=""><br><br>
+            <label for="">Password:</label>
+            <input type="password" name="password" id=""><br><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        <a href="/create_account/">Create Account</a>
+    </body>
+</html>
